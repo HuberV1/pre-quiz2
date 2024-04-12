@@ -16,3 +16,11 @@ matriz_2d = matriz_3d.reshape(-1, matriz_3d.shape[-1])
 #punto5 
 def matriz_a_dataframe(matriz):
     return pd.DataFrame(matriz)
+#punto6
+import scipy.io
+
+def cargar_matriz(file_path):
+    return scipy.io.loadmat(file_path)
+
+def cargar_csv(file_path):
+    return pd.read_csv(file_path)
