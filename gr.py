@@ -51,3 +51,13 @@ dataframe_patologia = pd.read_csv("archivo_patologia.csv")
 # ejemplo de como usar las funciones
 def suma_pandas(dataframe, columnas):
     return dataframe[columnas].sum(axis=1)
+#punto 9
+import matplotlib.pyplot as plt
+
+def graficar_señal(matriz):
+    plt.plot(matriz)
+    plt.xlabel("Tiempo")
+    plt.ylabel("Amplitud")
+    plt.title("Señal del archivo .mat")
+    plt.show()
+
