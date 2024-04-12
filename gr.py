@@ -11,3 +11,5 @@ matriz_3d = matriz_4d.copy().squeeze()
 print("Dimensiones:", matriz_3d.ndim)
 print("Forma:", matriz_3d.shape)
 print("Tamaño:", matriz_3d.size)
+#punto4
+matriz_2d = matriz_3d.reshape(-1, matriz_3d.shape[-1])
