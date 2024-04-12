@@ -45,3 +45,9 @@ def promedio(matriz, axis=None):
 
 def desviacion_estandar(matriz, axis=None):
     return np.std(matriz, axis=axis)
+#punto8 
+# Cargar el archivo CSV descargado previamente
+dataframe_patologia = pd.read_csv("archivo_patologia.csv")
+# ejemplo de como usar las funciones
+def suma_pandas(dataframe, columnas):
+    return dataframe[columnas].sum(axis=1)
